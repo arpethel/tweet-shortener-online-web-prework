@@ -19,11 +19,11 @@ def word_substituter(tweet)
   tweet_arr.each do |word|
     dictionary.each do |k, v|
       if word == k
-        return v
-        # tweet_arr.replace.values_at(word)
+        # return v
+        tweet_arr.replace.values_at(word)
       end
     end
   end
-  # result = tweet_arr.join(" ")
-  # return result
+  result = tweet_arr.join(" ")
+  return result
 end
