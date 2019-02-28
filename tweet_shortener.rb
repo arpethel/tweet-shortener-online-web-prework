@@ -52,5 +52,4 @@ def shortened_tweet_truncator(tweet)
     puts tweets
     return tweets
   end
-  # puts tweets
 end
