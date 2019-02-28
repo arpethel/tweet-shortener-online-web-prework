@@ -19,7 +19,6 @@ def word_substituter(tweet)
   tweet_arr.each do |word|
     dictionary.each do |k, v|
       if word == k
-        # return v
         word.replace(v)
       end
     end
