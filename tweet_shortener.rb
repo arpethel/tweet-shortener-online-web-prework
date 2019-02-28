@@ -28,8 +28,17 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweets)
-  str = tweets.join(" ")
+  str = tweets.join
   result = word_substituter(str)
   puts result
   # word_substituter(tweets)
+end
+
+def selective_tweet_shortener(tweets)
+  string = tweets.join
+  if string.length > 140
+    return word_substituter(string)
+  else
+    return string
+  end
 end
