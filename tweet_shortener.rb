@@ -48,8 +48,8 @@ def shortened_tweet_truncator(tweet)
   if tweets.length == 140
     return tweets
   else
-    tweets = tweets[0..136].concat("...")
-    return tweets
+    tweets = tweets[0..136]
+    return tweets + "..."
   end
   puts tweets
 end
