@@ -30,7 +30,7 @@ end
 def bulk_tweet_shortener(tweets)
   str = tweets.join
   result = word_substituter(str)
-  puts result
+  print result
   # word_substituter(tweets)
 end
 
