@@ -19,9 +19,9 @@ def word_substituter(tweet)
   tweet_arr.each do |word|
     dictionary_keys = dictionary.keys
     if dictionary_keys.include?(word)
-      # return true
-      tweet_arr.replace.values_at(word)
-      return tweet_arr
+      return keys
+      # tweet_arr.replace.values_at(word)
+
     end
   end
   # result = tweet_arr.join(" ")
