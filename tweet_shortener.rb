@@ -20,7 +20,7 @@ def word_substituter(tweet)
     dictionary.each do |k, v|
       if word == k
         # return v
-        tweet_arr.replace(word).values_at(k)
+        word.replace(v)
       end
     end
   end
