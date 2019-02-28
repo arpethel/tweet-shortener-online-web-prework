@@ -44,8 +44,8 @@ end
 
 def shortened_tweet_truncator(tweet)
 
-  tweets = selective_tweet_shortener(tweet)
-  puts tweets.length
+  tweets = selective_tweet_shortener(tweet).length
+  # puts tweets.length
   # if tweets.length > 140
   #   return true
   #   # puts string characters up to 136 characters, and concats with ...
