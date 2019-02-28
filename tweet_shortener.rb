@@ -34,11 +34,11 @@ def bulk_tweet_shortener(tweets)
   # word_substituter(tweets)
 end
 
-def selective_tweet_shortener(tweets)
-  string = tweets.join
-  if string.length > 140
-    return word_substituter(string)
+def selective_tweet_shortener(tweet)
+  # string = tweets.join
+  if tweet.length > 140
+    return word_substituter(tweet)
   else
-    return string
+    return tweet
   end
 end
