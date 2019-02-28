@@ -49,7 +49,7 @@ def shortened_tweet_truncator(tweet)
     puts tweets
     return tweets
   else
-    tweets = tweets[0..136]
+    tweets = tweets[0..136] + "..."
     puts tweets
     return tweets
   end
